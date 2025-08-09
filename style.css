@@ -1,0 +1,11 @@
+/* Custom styles for Mental Wellness Hub */
+
+/* Example: Add a smooth fade-in effect */
+body {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

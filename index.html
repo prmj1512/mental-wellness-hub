@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Wellness Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-green-100 min-h-screen font-sans">
+    <header class="text-center p-6 bg-white shadow-md">
+        <h1 class="text-3xl font-bold text-blue-800">Mental Wellness Hub 🌿</h1>
+        <p class="text-gray-600">Your mind matters. Let’s care for it together.</p>
+    </header>
+
+    <main class="max-w-3xl mx-auto mt-8 p-6 bg-white rounded-xl shadow-md">
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-green-700">🩺 Mental Health Self-Assessment</h2>
+            <form id="quizForm" class="space-y-4">
+                <div>
+                    <label class="block font-medium">1. How often have you been feeling down or hopeless lately?</label>
+                    <select class="w-full p-2 border rounded" name="q1">
+                        <option value="0">Not at all</option>
+                        <option value="1">Several days</option>
+                        <option value="2">More than half the days</option>
+                        <option value="3">Nearly every day</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-medium">2. Do you feel anxious or restless frequently?</label>
+                    <select class="w-full p-2 border rounded" name="q2">
+                        <option value="0">Not at all</option>
+                        <option value="1">Sometimes</option>
+                        <option value="2">Often</option>
+                        <option value="3">Almost always</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="button" onclick="calculateResult()" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Submit</button>
+                </div>
+            </form>
+            <div id="result" class="mt-6 text-lg font-medium text-blue-700"></div>
+        </section>
+
+        <hr class="my-8">
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700">🎯 Daily Wellness Activities</h2>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>🧘 5-minute guided breathing: Inhale 4s, Hold 4s, Exhale 4s</li>
+                <li>📓 Write 3 things you're grateful for</li>
+                <li>🌿 Take a 10-minute nature walk or stretch break</li>
+                <li>🛌 Go to bed without your phone for deeper sleep</li>
+            </ul>
+        </section>
+
+        <hr class="my-8">
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-red-700">📬 Emergency Help</h2>
+            <p class="text-gray-700">If you're in crisis, please contact:</p>
+            <ul class="list-disc list-inside text-red-600 mt-2">
+                <li>📞 24/7 Helpline: 1800-599-0019 (India)</li>
+                <li>🌐 <a href="https://www.opencounseling.com/suicide-hotlines" class="underline">Global Helplines</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="text-center text-sm text-gray-600 mt-10 mb-4">
+        &copy; 2025 Mental Wellness Hub | Stay Strong 💙
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
